@@ -1,0 +1,110 @@
+# Real DevOps Stories - Jeff Whitworth
+
+Who am I and why am I talking to you?
+- obsessed with software development for the past 25 years; would have been longer but that's all the time I've had so far.
+- In my eyes, I have an un-impressive resume, but I am a realist and a computing historian so I may be able to help you understand the current landscape and give some ideas of how to navigate it.
+
+- Most of my career in the US, some experience with multinationals in Asia, Europe
+
+- I am many, many things. Probably too many. But immediately after being a good friend, partner, and father to my family - I am a software developer and systems thinker. Maybe I should be more of a businessman, but it is what it is at this time.
+
+- check my resume for more details, but that is just the tip of the iceberg. Being obsessed has caused me to start all kinds of side projects and research.
+https://registry.jsonresume.org/jswhitworth
+
+With this time, my goal is adding value to how you think about you career.
+
+First, watch out for alure of tech. Don't forget, people are the most valueable asset.
+1) "HOW TO WIN FRIENDS AND INFLUENCE PEOPLE"
+https://www.csus.edu/indiv/l/luenemannu/pdf/communicationprinciples.pdf
+
+I have thought deeply about how it would be possible for people to ever become less than the most important aspect of our careers. I haven't yet imagined any way for people to become less that the #1 asset to you and any work you may be involved in.
+
+Hug your customers
+https://www.amazon.com/Hug-Your-Customers-Personalize-Astounding/dp/1401300340
+
+Who Moved My cheese?
+https://www.amazon.com/Moved-Cheese-Spencer-Johnson-M-D/dp/0743582853
+
+The Phoenix Project
+https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592
+
+2) Find mentors and become fans of people who are doing what you want to do.
+Have a twitter account? If not, get one.
+@thoughtworks
+@mitchellh
+@github
+
+3) Becomeing an advanced user of ChatGPT to get quick answers? If not, start now.
+https://openai.com/blog/chatgpt/
+
+4) consider installing co-pilot
+
+5) To be successful, you may need to think like an athlete. You may need to make the sacrifice of practice to become great.
+
+Tools for Development Operations:
+Become an expert in ONE IDE, vscode, vim, IntelliJ IDEA. If you chose something other than these, you should have a very good and defensible reason.
+If your IDE isn't supported by copilot, its like you're playing a game of 1 vs 2.
+Become an expert in python and javascript.
+Version Control: Git - Learn all the moves from the command line. commit, push, pull, merge, rebase, stash, branch, checkout, diff, log, status, and others.
+CI/CD Pipeline: GitHub Actions, AWS CodeCommit/CodePipeline/CodeDeploy, Jenkins, Azure DevOps..... (Travis CI, Circle CI, GitLab CI) 
+Linux (ubuntu, centos, amazon linux). Windows has become niche, but it isn't gone yet.
+Docker Containers / Kubernetes pods (Docker before K8s)
+NodeJs and Python microservices. NodeJS Express and Python Flask are a good place to start.
+
+GitHub account? If not, get one.
+Create a portfolio of your own work on github. Don't be afraid of re-writing work you find from others. I'm not saying present it as your own work, but I am saying avoid mental blocks by letting work from others give you forward momentum and let that momentum carry your own work forward.
+
+AWS/GCP/Azure account? Get one, learn how to run experiments on them.
+Check out the AWS DevOps blog:
+https://aws.amazon.com/blogs/devops/
+Experiments like this one:
+https://aws.amazon.com/blogs/devops/ci-cd-on-amazon-eks-using-aws-codecommit-aws-codepipeline-aws-codebuild-and-fluxcd/ 
+
+Daily activities
+- Read and learn based on your strategy for your development career. Don't mentally wander around or play on your phone.
+- SLEEP! You will not produce good work without it. You cannot avoid your humanity.
+- commits or pull requests. Write code! What will be a good day for you; 5 PRs?
+- exercise and eat well. your health is the source of your abilities
+
+My technical activities include:
+- writing Terraform, cloudformation, and AWS CDK to describe cloud resources to host software components
+- adding calls to logging libraries and tools to log events
+- writing python & javascript functions which take action on logged events
+For example, the timespan between the last event and now is too great for in a specific queue. Restart the services which feed into the queue. Or test the services which feed the queue.
+- writing Jenkins groovy or Github action pipelines and testing those pipelines
+- creating templates for code repositories, microservices, and containers
+
+Challenges and solutions for DevOps implementation
+- Security first; you can and will lose trust if you inadverently expose data; learn how to keep secrets and always use encryption when you can
+- CI/CD; if not everything else is slow
+- When possible, run metiphorical experiments in a quick & dirty way to validate hypotheses
+- You will need to build trust that you can use code to accomplish tasks to solve problems. Be open minded and flexible when people ask you to do things without code. Chose your battles wisely. At some point, if you are doing everything by hand and your team/organization doesn't support you automating things - it may be time to thing about joining a team who will let you practice automation and further your career.
+
+
+Role of automation, monitoring, and testing in DevOps
+- Learn to use test driven development (TDD) and WRITE TESTS! Tests feel like sacrifice at first. Later, tests feel like the obvious place to start.
+- Automate everything; EVERYTHING. If you think it isn't possible, its because you haven't broken the task into small enough pieces. Automation is an investment, so you'll need to get buy-in and approval from your team on the effort. Do you best to avoid doing work which others are not aware. Keep all of your work as open to your team as possible and you'll avoid negative surprises. Its all too common for an individual to do a weeks worth of hard work on a problem and for a team lead or manager to see it as a wasted week because they weren't aware of the work.
+
+The future of DevOps and its potential impact on the industry
+- GitOps for everything. All changes are made in code. Infrastructure as code.
+- Serverless is the present & future.
+
+The impact should be increased velicity and turning tough problems trivial problems. It used to be hard to deploy a security compliant virtual machine, now it can happen with a request to run a github workflow.
+Whole cloud platforms can be stood up by copying a reposity template and completing the required input fields.
+There are sections of the industry which will go away but its hard to eliminate the nurses, so to speak.
+
+Real-world examples
+https://github.com/aws-samples/aws-codedeploy-github-actions-deployment
+https://aws.amazon.com/blogs/compute/using-github-actions-to-deploy-serverless-applications/
+
+Comparison of different DevOps tools and methodologies
+GitHub actions vs Jenkins
+Terraform vs Cloudformation vs AWS CDK
+
+
+Find the right team for you. If you are being criticized for your initial mistakes, you are on the wrong team. If you are being taught where we made mistakes, you may be on the right team. If you are given the chance to make mistakes and correct them - you owe it to the team to learn from those mistakes and not make them again. If you don't learn from your mistakes, you are a liability to the team and you should be prepared to be let go.
+
+Never give up; never give up; never give up.
+Be an agressive learner and experimenter.
+Break things.
+Move fast.
